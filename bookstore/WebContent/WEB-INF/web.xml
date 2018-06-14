@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>bookstore</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>com.bookstore.processor.Search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddBook</servlet-name>
+    <servlet-class>com.bookstore.processor.AddBook</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddBook</servlet-name>
+    <url-pattern>/addBook</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CartUpdate</servlet-name>
+    <servlet-class>com.bookstore.processor.CartUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartUpdate</servlet-name>
+    <url-pattern>/cartUpdate</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>SubmitOrder</servlet-name>
+    <servlet-class>com.bookstore.processor.SubmitOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SubmitOrder</servlet-name>
+    <url-pattern>/submitOrder</url-pattern>
+  </servlet-mapping>
+</web-app>
